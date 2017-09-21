@@ -1,0 +1,32 @@
+<div class="card">
+	<div class="card-header">
+		<h4 class="card-title"><i class="fa fa-cart-plus"></i> Đặt hàng</h4>
+	</div>
+  	<div class="card-body">
+    	<h4 class="mt-0 mb-4">Chọn dịch vụ</h4>
+    	<p class="card-text">Chúng tôi luôn cung cấp cho khách hàng những dịch vụ tốt nhất.</p>
+    	<div class="table-responsive">
+	    	<table class="table">
+			  <thead class="bg-info text-white">
+			    <tr>
+			      <th>Dịch vụ</th>
+			      <th>Đv</th>
+			      <th>Giá/đv</th>
+			      <th class="text-center" width="50"><i class="fa fa-check-square-o"></i></th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr *ngFor="let service of services">
+			      <th scope="row">{{ service.name }}</th>
+			      <td>{{ service.unit }}</td>
+			      <td>{{ service.price }}</td>
+			      <td class="text-center"><input type="checkbox" name="service" [checked]="service.selected"></td>
+			    </tr>
+			  </tbody>
+			</table>
+		</div>
+		<div class="text-center">
+			<a href="" class="btn btn-info-reverse">Tiếp tục <i class="fa fa-angle-right ml-2"></i></a>
+		</div>
+  	</div>
+</div>

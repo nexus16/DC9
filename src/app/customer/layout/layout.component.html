@@ -1,0 +1,31 @@
+<div class="full-vh relative">
+	<nav [class.active]="menuActive" class="text-light" #menu>
+		<header>
+			<div class="logo">
+				<a href="/" class="text-white"><i class="fa fa-yoast fa-2x"></i></a>
+			</div>
+		</header>
+		<ul>
+			<li *ngFor="let menu of menus">
+				<a href=""><i [ngClass]="[menu.iconClass, 'mr-2']"></i>{{ menu.name }}</a>
+			</li>
+		</ul>
+		<small class="copyright"><a href="#">@Copyright DC9 Kakalot - 2017</a></small>
+	</nav>
+	<section>
+		<div class="top px-3 py-2 text-light">
+			<div class="d-flex justify-content-between bd-highlight">
+			    <div class="menu-icon cursor-p" (click)="activeMenu()"><i class="fa fa-bars fa-2x"></i></div>
+				<div class="logo">
+					<a href="/" class="text-white"><i class="fa fa-yoast fa-2x"></i></a>
+				</div>
+				<div class="noti-icon mt-1">
+					<a href="/" class="text-white"><i class="fa fa-bell fa-lg"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="px-3 py-2 bg-light" id="customer-content">
+			<router-outlet></router-outlet>
+		</div>
+	</section>
+</div>

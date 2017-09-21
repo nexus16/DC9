@@ -1,0 +1,40 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~font-awesome/css/font-awesome.css";
+
+.full-vh{
+	min-height:100vh;
+}
+.full-w{
+	width: 100%;
+}
+.btn{
+	cursor: pointer
+}
+.cursor-p{
+	cursor: pointer;
+}
+.relative{
+	position: relative;
+}
+.btn-info-reverse{
+	background-color: #fff;
+	color: #17a2b8!important;
+    border-color: #5ba7b4;
+    &:hover{
+    	background-color: #f0fdff;
+    }
+}
+.close{
+	opacity: 1;
+}
+
+.copyright{
+	position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.table thead th{
+	vertical-align: middle;
+}

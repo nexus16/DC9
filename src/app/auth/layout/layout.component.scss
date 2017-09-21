@@ -1,0 +1,17 @@
+.auth-wrapper{
+	width: 500px;
+	height: 500px;
+    margin: auto;
+}
+.logo{
+	text-align: center;
+    font-size: 80px;
+}
+/deep/{
+	a{
+		color: #add3d9;
+	    &:hover{
+	    	color: #fff;
+	    }
+	}
+}
