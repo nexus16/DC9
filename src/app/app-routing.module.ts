@@ -7,6 +7,7 @@ import { ResetPasswordComponent } from './auth/reset-password/reset-password.com
 
 import { LayoutComponent as CustomerLayout}  from './customer/layout/layout.component';
 import { OrderComponent }        from './customer/order/order.component';
+import { PriceTableComponent } from './customer/price-table/price-table.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -19,7 +20,7 @@ const childRoutes: Routes = [
 	    component: AuthLayout,
 	    children: [
 	      	{ path: 'login',component: LoginComponent },
-	      	{ path: 'reset-password', component: ResetPasswordComponent }
+	      	{ path: 'reset-password', component: ResetPasswordComponent },
     	]
   	},
     {
@@ -27,6 +28,8 @@ const childRoutes: Routes = [
       component: CustomerLayout,
       children: [
           { path: 'order',component: OrderComponent },
+          { path: 'price-table',component: PriceTableComponent },
+
       ]
     },
 ];

@@ -10,7 +10,7 @@ import { LayoutModule as CustomerLayoutModule }  from './customer/layout/layout.
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

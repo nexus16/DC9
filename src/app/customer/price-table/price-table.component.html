@@ -1,0 +1,25 @@
+<div class="card">
+	<div class="card-header">
+		<h4 class="card-title"><i class="fa fa-th-list"></i> Bảng giá</h4>
+	</div>
+  	<div class="card-body">
+    	<div class="table-responsive">
+	    	<table class="table">
+			  <thead class="bg-info text-white">
+			    <tr>
+			      <th>Dịch vụ</th>
+			      <th>Đv</th>
+			      <th>Giá/đv</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr *ngFor="let service of services">
+			      <th scope="row">{{ service.name }}</th>
+			      <td>{{ service.unit }}</td>
+			      <td>{{ service.price }}</td>
+			    </tr>
+			  </tbody>
+			</table>
+		</div>
+  	</div>
+</div>

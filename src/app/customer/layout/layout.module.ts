@@ -4,11 +4,14 @@ import { CommonModule } from '@angular/common';
 
 import { OrderComponent } from '../order/order.component';
 import { LayoutComponent } from './layout.component';
+import { PriceTableComponent } from '../price-table/price-table.component';
 
 @NgModule({
   declarations: [
     OrderComponent,
-    LayoutComponent
+    LayoutComponent,
+    PriceTableComponent,
+
   ],
   imports: [ RouterModule,CommonModule ],
   providers: [],
